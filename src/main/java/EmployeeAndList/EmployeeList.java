@@ -14,13 +14,11 @@ import javax.swing.table.DefaultTableModel;
  * @author tltkh
  */
 public class EmployeeList extends Employee{
-     public ArrayList<Employee> list = new ArrayList<>();
-    private String path = "C:\\Users\\tltkh\\OneDrive\\Documents\\NetBeansProjects\\mavenproject1\\Emp.txt";
+    public ArrayList<Employee> list = new ArrayList<>();
+    private String path = "D:\\data\\data.txt";
     public void saveToFile() throws Exception{
-        XFile.writeObject(path, list);  
-        
+        XFile.writeObject(path, list);
     }
-    
     
     // load file
     public void loadFromFile() throws Exception{
@@ -37,9 +35,9 @@ public class EmployeeList extends Employee{
     
     // create DataEmployee
      private void initEmployeeData(){
-        list.add(new Employee("1","Linh","linh@gmail.com",5000, 20));
-        list.add(new Employee("2","Nguyen","nguyen@gmail.com",6000, 19));
-        list.add(new Employee("3","Lam","lam@gmail.com",7000, 22));
+        list.add(new Employee("1","Phong","Phong@gmail.com",1000, 20));
+        list.add(new Employee("2","Khanh","Khanh@gmail.com",6000, 20));
+        list.add(new Employee("3","Hieu","Hieu@gmail.com",2000, 20));
     }
     
     private int currentIndex = 0;
