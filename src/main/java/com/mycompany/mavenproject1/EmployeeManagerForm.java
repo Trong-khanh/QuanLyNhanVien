@@ -388,7 +388,7 @@ public class EmployeeManagerForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLastActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-        try {
+
             Employee emp = empList.findByID(txtEmployeeID.getText());
 
             if (emp != null) {
@@ -397,9 +397,7 @@ public class EmployeeManagerForm extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Employee Id is not existed or delete fail!");
             }
 
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
-        }
+
     }//GEN-LAST:event_btnSearchActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
